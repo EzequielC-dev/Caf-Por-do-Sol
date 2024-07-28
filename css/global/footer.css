@@ -1,0 +1,44 @@
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 6rem;
+    background-color: var(--cor-fundo-1);
+}
+
+.rodape img {
+    max-width: 20rem;
+}
+
+.rodape h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+}
+
+.rodape a:hover {
+    color:rgb(252, 252, 252);
+    transition: 1.5s;
+}
+
+.rodape p:hover {
+    color:rgb(252, 252, 252);
+    transition: 1.5s;
+}
+
+.rodape ul {
+    list-style: none;
+}
+
+.contato {
+    display: flex;
+    gap: 2rem;
+}
+
+.contato img {
+    max-width: 5rem;
+}
