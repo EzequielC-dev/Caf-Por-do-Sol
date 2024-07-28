@@ -1,0 +1,20 @@
+.botao {
+    max-width: 19rem;
+    padding: 2rem;
+    background-color: #74512D;
+    border-radius: .5rem;
+    border: 0;
+}
+
+.botao-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #F8F4E1;
+}
+
+.botao:hover {
+    background-color: #38230c;
+    transition-delay: 0.25s;
+}
