@@ -94,9 +94,50 @@ h1 {
 
 .principal-opcoes {
     border-top: 1px solid black;
+    margin-top: -10rem;
+    padding: 6rem;
+}
+
+.principal-opcoes h1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.principal-opcoes img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: 3px solid var(--cor-borda);
+    border-radius: 3px;
+}
+
+.principal-opcoes img:hover {
+    filter: contrast(1.1);
+}
+
+.principal-opcoes-lista {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 9rem;
+    list-style: none;
+}
+
+
+.principal-opcoes-lista li a {
+    text-decoration: none;
+    color: var(--cor-borda);
+    font-weight: bold;
+}
+
+.principal-opcoes-lista span {
+    color: #287527;
 }
 
 /* Responsivo */
+
 
 @media (max-width: 1050px) {
 
