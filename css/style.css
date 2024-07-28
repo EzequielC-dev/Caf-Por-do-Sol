@@ -172,16 +172,15 @@ a span {
         gap: 3rem;
     }
     
-    .galeria-coluna img:first-child {
-        border: 3px solid var(--cor-borda);
-        width: 10rem;
-        height: 10rem;
+    .principal-galeria {
+        overflow-x: auto;
     }
     
     .galeria-coluna img {
-        border: 0;
-        width: 0;
-        margin: 0;
+        display: flex;
+        flex-direction: row;
+        border: 3px solid var(--cor-borda);
+
     }
 
     .principal-opcoes h1 {
