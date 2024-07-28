@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 6rem;
     background-color: var(--cor-fundo-1);
+    color: #38230c;
 }
 
 .rodape img {
@@ -12,11 +13,12 @@
 .rodape h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
+    color: black;
 }
 
 .rodape a {
     text-decoration: none;
-    color: black;
+    color: #38230c;
     font-size: 2rem;
 }
 
@@ -41,4 +43,20 @@
 
 .contato img {
     max-width: 5rem;
+}
+
+.rodape-informacoes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: gray;
+    font-weight: bold;
+}
+
+.rodape-informacoes ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
