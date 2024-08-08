@@ -10,6 +10,10 @@
     max-width: 20rem;
 }
 
+.rodape-logo img {
+    margin-top: -4rem;
+}
+
 .rodape h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -18,18 +22,9 @@
 
 .rodape a {
     text-decoration: none;
-    color: #38230c;
+    color: black;
     font-size: 2rem;
-}
-
-.rodape a:hover {
-    color:rgb(252, 252, 252);
-    transition: 1.5s;
-}
-
-.rodape p:hover {
-    color:rgb(252, 252, 252);
-    transition: 1.5s;
+    font-weight: normal;
 }
 
 .rodape ul {
@@ -59,4 +54,10 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+.rodape-paragrafo {
+    font-weight: bold;
+    color: black;
+    margin-top: -1.8rem;
 }
