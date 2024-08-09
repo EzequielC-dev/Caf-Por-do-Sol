@@ -86,4 +86,19 @@
         padding-left: 35rem;
         overflow-x: scroll;
     }
+
+    .producao-empresa {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .producao-empresa-texto {
+        max-width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .producao-empresa-texto p {
+        font-size: 30px;
+    }
 }
