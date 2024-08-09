@@ -3,6 +3,7 @@
 @import './global/footer.css';
 @import './global/botao.css';
 @import './global/navlink.css';
+@import './lattes.css';
 
 
 .principal-sessao {
@@ -181,65 +182,6 @@ a span {
 .principal-informacoes-texto {
     display: flex;
     flex-direction: column;
-}
-
-.producao-empresa {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 9rem;
-}
-
-.producao-empresa-imagem img{
-    max-width: 100%;
-    height: 100%;
-    border-radius: right 20%;
-}
-
-.producao-empresa-texto {
-    background-color: var(--cor-borda);
-    max-width: 50%;
-    color: #F8F4E1;
-    padding: 6rem;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-}
-
-.producao-empresa h3 {
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    font-size: 3.6rem;
-    text-align: center;
-}
-
-.producao-empresa p {
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-.principal-icones {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 9rem;
-    padding: 5rem;
-}
-
-.principal-icones div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.principal-icones div p {
-    color: var(--cor-borda);
-    font-weight: bold;
-    font-size: 3rem;
-}
-
-.principal-icones img {
-    max-width: 5rem;
 }
 
 @media(max-width: 1000px) {

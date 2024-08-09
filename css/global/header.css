@@ -18,26 +18,75 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 0rem;
     flex-wrap: wrap;
     border-bottom: 1px solid #543310;
 }
 
 .cabecalho img {
-    max-width: 12rem;
+    max-width: 9rem;
 }
 
-.cabecalho-navegacao ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+/* From Uiverse.io by ahmedyasserdev */ 
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 5rem;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  
+  .burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s ease;
+  }
+  
+  #burger-checkbox {
+    display: none;
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  
 
+.cabecalho-navegacao .nav-lista {
+    display: none;
+}
+
+.cabecalho-navegacao.ativo .nav-lista{
+    
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
+    align-items: center;
+
+    list-style: none;
     gap: 10rem;
-    padding-right: 6rem;
+    padding-right: 9rem;
+
     text-transform: capitalize;
     font-size: 1.9rem;
     font-weight: bolder;
+
+    position: relative;
 }
 
 .cabecalho-navegacao img {
@@ -74,12 +123,16 @@ body {
         margin: 0 auto;
         max-width: 8rem;
     }
-    
-    .cabecalho-navegacao ul {
+
+    .cabecalho-navegacao .nav-lista {
+        flex-wrap: wrap;
+        list-style: none;
+        display: block;
         display: flex;
-        justify-content: flex-end;
         gap: 2rem;
-        padding-right: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: bold;
     }
     
     .cabecalho-navegacao li>a {
@@ -97,4 +150,8 @@ body {
         background-color: #38230c;
         transition-delay: 0.25s;
     } 
+
+    .burger {
+        display: none;
+    }
 }
