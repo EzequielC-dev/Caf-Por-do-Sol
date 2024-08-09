@@ -4,6 +4,7 @@
 @import './global/botao.css';
 @import './global/navlink.css';
 @import './cafes.css';
+@import './global/scroll.css';
 
 .producao-empresa {
     display: flex;
@@ -62,4 +63,27 @@
 
 .principal-icones img {
     max-width: 5rem;
+}
+
+@media(max-width: 1050px) {
+    h1 {
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    .principal-informacoes div::before {
+        display: none;
+    }
+
+    .principal-informacoes{
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        overflow-y: scroll;
+        padding-left: 49rem;
+    }
+
+    .principal-opcoes {
+        padding-left: 35rem;
+        overflow-x: scroll;
+    }
 }

@@ -4,6 +4,7 @@
 @import './global/botao.css';
 @import './global/navlink.css';
 @import './lattes.css';
+@import './global/scroll.css';
 
 
 .principal-sessao {
@@ -184,9 +185,25 @@ a span {
     flex-direction: column;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1050px) {
     h1 {
         text-align: center;
         text-transform: capitalize;
+    }
+
+    .principal-informacoes div::before {
+        display: none;
+    }
+
+    .principal-informacoes{
+        padding-bottom: 0rem;
+        margin-bottom: 0;
+        overflow-y: scroll;
+        padding-left: 49rem;
+    }
+
+    .principal-opcoes {
+        padding-left: 35rem;
+        overflow-x: scroll;
     }
 }
