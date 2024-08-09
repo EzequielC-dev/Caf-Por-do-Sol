@@ -30,10 +30,9 @@
 }
 
 .principal-galeria img:hover {
-    transition-delay: .15s;
     filter: contrast(1.25);
     transform: scale(1.025);
-
+    transition: 1s;
 }
 
 .principal-informações {
