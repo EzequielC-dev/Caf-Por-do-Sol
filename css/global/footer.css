@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 6rem;
-    background-color: var(--cor-fundo-1);
-    color: #38230c;
+    background-color: #AF8F6F;
+    font-weight: bold;
 }
 
 .rodape img {
@@ -15,16 +15,16 @@
 }
 
 .rodape h2 {
+    font-weight: bold;
     font-size: 4rem;
     margin-bottom: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .rodape a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 2rem;
-    font-weight: normal;
 }
 
 .rodape ul {
@@ -45,8 +45,6 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color: gray;
-    font-weight: bold;
 }
 
 .rodape-informacoes ul{
@@ -57,7 +55,6 @@
 }
 
 .rodape-paragrafo {
-    font-weight: bold;
-    color: black;
+    color: rgb(0, 0, 0);
     margin-top: -1.8rem;
 }

@@ -2,6 +2,7 @@
 @import './global/header.css';
 @import './global/footer.css';
 @import './global/botao.css';
+@import './global/navlink.css';
 
 
 .principal-sessao {
@@ -21,6 +22,8 @@ h1 {
 
 .principal-opcoes {
     display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .principal-opcoes h1 {
@@ -41,16 +44,14 @@ h1 {
     display: flex;
     display: block;
     max-width: 25rem;
-    margin: 0 auto;
 }
-
-
 
 .principal-opcoes-lista li {
     border: 1px solid var(--cor-borda);
     background-color: #AF8F6F;
     padding: 2rem;
     border-radius: 3px;
+    margin-bottom: 5rem;
 }
 
 .principal-opcoes-lista li:hover {
