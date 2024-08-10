@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+    --cor-fundo-1: #74512D;
+    --cor-borda: #543310;
+    --cor-fundo-botao: #38230c;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #F8F4E1;
+}
+
+.cabecalho {
+    background-color: #AF8F6F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #543310;
+}
+
+.cabecalho img {
+    max-width: 9rem;
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+.cabecalho-navegacao .nav-lista {
+    display: none;
+}
+
+
+
+.cabecalho-navegacao.ativo .nav-lista{
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10rem;
+    align-items: center;
+
+    list-style: none;
+    gap: 10rem;
+    padding-right: 9rem;
+
+    text-transform: capitalize;
+    font-size: 1.9rem;
+    font-weight: bolder;
+
+    position: relative;
+    animation: slidedown 1s forwards;
+}
+
+@keyframes slidedown {0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+
+.cabecalho-navegacao img {
+    max-width: 6.5rem;
+}
+
+.cabecalho-navegacao img:hover {
+    transform: translateY(-.5rem);
+    transition: .5s;
+}
+
+.cabecalho-navegacao a {
+    text-decoration: none;
+    color: #543310;
+}
+
+.cabecalho-navegacao li>a {
+    border: 2px solid #543310;
+    padding: 1.3rem;
+    border-radius: .5rem;
+}
+
+.cabecalho-navegacao li>a:hover {
+    background-color: #F8F4E1;
+    transition: .3s;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 1050px) {
+    /* From Uiverse.io by ahmedyasserdev */ 
+.burger {
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
+    margin-right: 5rem;
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
+  
+  .burger span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #333;
+    margin: 6px 0;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s ease;
+  }
+  
+  #burger-checkbox {
+    display: none;
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  
+  #burger-checkbox:checked + .burger span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  
+
+    .cabecalho-navegacao.ativo .nav-lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1.9rem;
+    }
+
+    .cabecalho img {
+        margin: 0 auto;
+        max-width: 8rem;
+    }
+
+    .cabecalho-navegacao .nav-lista {
+        display: none;
+        padding: 2.5rem;
+    }
+    
+    .cabecalho-navegacao li>a {
+        background-color: #74512D;
+        color: #F8F4E1;
+        padding: .65rem;
+        border-radius: 1.25rem;
+    }
+    
+    .cabecalho-navegacao img {
+        display: none;
+    }
+    
+    .cabecalho-navegacao li>a:hover {
+        background-color: #38230c;
+        transition-delay: 0.25s;
+    } 
+}

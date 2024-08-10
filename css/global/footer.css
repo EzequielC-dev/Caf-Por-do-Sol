@@ -1,0 +1,77 @@
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 6rem;
+    background-color: #AF8F6F;
+    font-weight: bold;
+}
+
+.rodape img {
+    max-width: 20rem;
+}
+
+.rodape-logo img {
+    margin-top: -4rem;
+}
+
+.rodape h2 {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.rodape a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+}
+
+.rodape ul {
+    list-style: none;
+}
+
+.contato {
+    display: flex;
+    gap: 2rem;
+}
+
+.contato img {
+    max-width: 5rem;
+}
+
+.rodape-informacoes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rodape-informacoes ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rodape-paragrafo {
+    color: rgb(0, 0, 0);
+    margin-top: -1.8rem;
+}
+
+@media (max-width: 1050px) {
+    .rodape {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .rodape img {
+        display: none;
+    }
+
+    .rodape section {
+        margin-bottom: 2rem;
+    }
+}
