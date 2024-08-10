@@ -1,13 +1,12 @@
 if(window.innerWidth > 1050) {
     function navMenu() {
         const accordList = document.querySelector(".cabecalho-navegacao");
+        accordList.classList.add('ativo');
         const burgerCheckbox = document.getElementById("burger-checkbox");
     
         function activeAccordion() {
             if (burgerCheckbox.checked) {
-                accordList.classList.add("ativo");
-            } else {
-                accordList.classList.remove("ativo");
+                accordList.classList.toggle("ativo");
             }
         }
     
