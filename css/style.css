@@ -175,6 +175,30 @@ a span {
 
 
 @media (max-width: 1050px) {
+    .galeria-span img {
+        max-width: 40rem;
+        max-height: 10rem;
+    }
+    
+    .principal-galeria img {
+        margin-bottom: 1rem;
+        max-width: 15rem;
+        object-fit: cover;
+        border: 3px solid var(--cor-borda);
+        object-fit: cover;
+    }
+    
+    #foto-1 {
+        height: 23.3rem;
+    }
+    
+    #foto-2 {
+        height: 23.8rem;
+    }
+    
+    #foto-3 {
+        height: 15.7rem;
+    }
 
     .principal-informações {
         display: flex;
