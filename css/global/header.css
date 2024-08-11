@@ -158,3 +158,9 @@ body {
         transition-delay: 0.25s;
     } 
 }
+
+@media (max-width: 380px) {
+    .cabecalho-navegacao .nav-lista {
+        flex-wrap: wrap;
+    }
+}

@@ -178,8 +178,29 @@ a span {
 
     .principal-informações {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         gap: 3rem;
+    }
+
+    .principal-informações h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .principal-informações p {
+        width: 30rem;
+        text-align: center;
+    }
+
+    .principal-informações button {
+        margin: 0 auto;
+    }
+
+    .principal-sessao img {
+        margin-top: 5rem;
+        margin: 0 auto;
     }
     
     .principal-galeria {
@@ -194,13 +215,13 @@ a span {
     }
 
     .principal-opcoes h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+        text-wrap: nowrap;
+        text-align: center;
     }
 
     .principal-opcoes-lista {
-        padding-left: 27em;
-        overflow-x: auto;
-        overflow: contain;
-        gap: 1.25rem;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 }
