@@ -1,10 +1,5 @@
-@import './global/reset.css';
-@import './global/header.css';
-@import './global/footer.css';
-@import './global/botao.css';
-@import './global/navlink.css';
-@import './cafes.css';
-@import './global/scroll.css';
+@import './style.css';
+
 
 .producao-empresa {
     display: flex;
@@ -100,5 +95,11 @@
 
     .producao-empresa-texto p {
         font-size: 20px;
+    }
+
+    .principal-icones {
+        display: flex;
+        gap: 3.5rem;
+        padding: 2rem;
     }
 }
