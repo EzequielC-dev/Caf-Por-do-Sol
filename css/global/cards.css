@@ -126,9 +126,15 @@ a span {
 }
 
 .card-compra button {
+    cursor: pointer;
     background-color: #F8F4E1;
     border-radius: 3px;
     border: 2px solid var(--cor-borda);
+}
+
+.card-compra button:hover {
+    background-color: #ecdc8a;
+    transition: .5s;
 }
 
 .card-compra button> a {

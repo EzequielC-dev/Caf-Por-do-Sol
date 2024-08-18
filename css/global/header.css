@@ -46,7 +46,7 @@ body {
 
     list-style: none;
     gap: 10rem;
-    padding-right: 9rem;
+    padding-right: 3rem;
 
     text-transform: capitalize;
     font-size: 1.9rem;
@@ -62,9 +62,9 @@ body {
     max-width: 6.5rem;
 }
 
-.cabecalho-navegacao img:hover {
-    transform: translateY(-.5rem);
-    transition: .5s;
+.cabecalho-navegacao .nav-lista img:hover {
+    filter: invert(100%);
+    transition: .7s;
 }
 
 .cabecalho-navegacao a {
@@ -83,11 +83,115 @@ body {
     transition: .3s;
 }
 
+#carrinho {
+    max-width: 6rem;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#carrinho:hover{
+    filter: invert(0%);
+    transition: .7s;
+}
+
+.carrinho-Interface {
+    display: none;
+}
+
+.carrinho-Interface.ativo {
+    animation: eixoX .5s forwards;
+    position: absolute;
+    z-index: 3;
+    border: 3px solid #38230c;
+    border-radius: 8px;
+    background-color: #F8F4E1;
+    top: 9.5rem;
+    right: 0rem;
+    max-height: 60rem;
+    overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@keyframes eixoX {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.carrinho-Interface h3 {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    text-transform: uppercase;
+}
+
+.carrinho-produtos ul {
+    background-color: #d3b393;
+}
+
+.carrinho-produtos-lista {
+    display: flex;
+    gap: 3rem;
+    border-radius: 8px;
+    max-width: 100%;
+    padding: 3rem;
+    font-weight: bold;
+}
+
+.carrinho-produtos-informacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos-preco-quantidade {
+    display: flex;
+}
+
+.carrinho-produtos-informacao input {
+    width: 50%;
+    padding: .3rem;
+    border-radius: 4rem;
+    border: 0;
+    text-align: center;
+}
+
+.botao-produto-remover {
+    margin-top: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    background-color: #543310;
+    border: 1px solid #38230c;
+    color: #F8F4E1;
+}
+
+#botao-finalizar {
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.8rem;
+    background-color: #543310;
+    border: 1px solid #38230c;
+    color: whitesmoke;
+}
+
+.total-carrinho {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
 
 /* Responsivo */
 
 @media (max-width: 1050px) {
-    /* From Uiverse.io by ahmedyasserdev */ 
+/* From Uiverse.io by ahmedyasserdev */ 
 .burger {
     display: inline-block;
     cursor: pointer;

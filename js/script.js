@@ -37,3 +37,30 @@ function animacaoScroll() {
   window.addEventListener("scroll", animaScroll);
 }
 animacaoScroll();
+
+function carrinhoAtivo() {
+  const carrinho = document.querySelector('#carrinho');
+  const carrinhoInterface = document.querySelector('.carrinho-Interface')
+
+  function mostrarCarrinho() {
+    carrinhoInterface.classList.toggle('ativo')
+  }
+  carrinho.addEventListener('click', mostrarCarrinho);
+}
+carrinhoAtivo();
+
+function compraCarrinho() {
+  const carrinhoInterface = document.querySelector('.carrinho-interface');
+  const botaoCompra = document.querySelector('.botao-carrinho');
+  const card = document.getElementsByClassName('li');
+  const cardArray = Array.from(card);
+  
+  function adicionarAoCarrinho() {
+    cardArray.forEach(item => {
+      element.classList.add('Comprado');
+    });
+  }
+
+  botaoCompra.addEventListener('click', adicionarAoCarrinho);
+}
+compraCarrinho();
