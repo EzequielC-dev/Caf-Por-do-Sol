@@ -30,4 +30,4 @@ A aplicação consiste em uma cafeteria que tem seus pedidos, sistema de carrinh
 
 # Autor
 
-Ezequiel Ferreira Cardoso
+Ezequiel Ferreira
